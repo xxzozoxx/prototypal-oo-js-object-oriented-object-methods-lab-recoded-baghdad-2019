@@ -3,8 +3,8 @@ function BroadMember (name,homeState,training){
   this.homeState = homeState;
   this.training = training;
 }
-  BroadMember.prototype.veto(){return 'No, I must disagree'; }
-  BroadMember.prototype.approve(){return 'You can do that!'}
-  doCharity(){return 'I like to help people.'}
-  releasePressStatement(){return 'You will see great things from Scuber.';}
-  sayHi(){return `Hi, my name is ${this.name}. I am from ${this.homestate}, and I was trained in ${this.training}.`
+  BroadMember.prototype.veto = function(){return 'No, I must disagree'; }
+  BroadMember.prototype.approve = function(){return 'You can do that!'}
+  BroadMember.prototype.doCharity = function(){return 'I like to help people.'}
+  BroadMember.prototype.releasePressStatement = function(){return 'You will see great things from Scuber.';}
+  BroadMember.prototype.sayHi= function (){return `Hi, my name is ${this.name}. I am from ${this.homestate}, and I was trained in ${this.training}.`;}
